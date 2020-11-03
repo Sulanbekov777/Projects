@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "name": "Dastan",
+      "id": 1
+    },
+    {
+      "name": "Oomat",
+      "id": 2
+    },
+    {
+      "name": "Оомат",
+      "id": 3
+    },
+    {
+      "name": "oomat",
+      "id": 4
+    },
+    {
+      "name": "Oommat",
+      "id": 5
+    }
+  ],
+  "cards": [
+    {
+      "price": "100 som",
+      "product": "Iphone",
+      "numberInStorage": "12",
+      "seller": "Anton",
+      "numberOfTelephone": "556688977",
+      "images": "https://i.pcmag.com/imagery/reviews/03xdTO0Ka4H4KvEgtSPg4c2-12..v_1569479325.jpg",
+      "id": 4
+    },
+    {
+      "price": "900",
+      "product": "samsung",
+      "numberInStorage": "12",
+      "seller": "anton",
+      "numberOfTelephone": "556789443",
+      "images": "https://avatars.mds.yandex.net/get-mpic/1056698/img_id6826812525233548257.jpeg/orig",
+      "id": 5
+    },
+    {
+      "price": "40 som",
+      "product": "one plus",
+      "numberInStorage": "123",
+      "seller": "Oomat",
+      "numberOfTelephone": "55642493",
+      "images": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-11-pro-og-facebook-201909?wid=600&hei=315&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1566936518195",
+      "id": 6
+    },
+    {
+      "price": "400 som",
+      "product": "Xiaomi",
+      "numberInStorage": "18",
+      "seller": "alesha",
+      "numberOfTelephone": "55668977",
+      "images": "https://www.gizmochina.com/wp-content/uploads/2020/04/Xiaomi-Mi-10-Youth-5G-1-433x433.jpg",
+      "id": 7
+    }
+  ]
+}

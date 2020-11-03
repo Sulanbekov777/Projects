@@ -1,0 +1,44 @@
+body {
+    background: url(../img/maurits-bausenhart-fSPxYxOEUpc-unsplash.jpg ) no-repeat ; /* Цвет фона и путь к файлу */
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-size: initial;
+ }
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color:white;
+    transition: .5s;
+
+}
+
+.body{
+  width: 100px;
+  background-repeat: no-repeat;
+
+}
+.first-block{
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+}
+
+ .header_icon{
+     display: flexbox;
+ }
+ .contaier-1{
+     background-image: url(../img/challenge.jpg);
+ }

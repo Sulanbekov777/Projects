@@ -1,0 +1,134 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(-45deg, #fff, #000);
+    background-size: 250% 250%;
+    animation: gradient 10s ease infinite;
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px;
+    overflow-y: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.container{
+    text-align: center;
+    display: block;
+    
+    width: 100%;
+}
+
+#containerForBackground{
+    background-color: #0F2027;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+#price{
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: .2s;
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+    width: 250px;
+    margin-top: 100px;
+}
+#numberInStorage{
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: .2s;
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+    width: 250px;
+}
+#seller{
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: .2s;
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+    width: 250px;
+}
+#nameOfProduct{
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: .2s;
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+    width: 250px;
+}
+#numberOfTelephone{
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: .2s;
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+    width: 250px;
+}
+#images{
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: .2s;
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    width: 250px;
+}
+#create{
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to left, #0F2027, #2C5364);
+    text-decoration: none;
+    padding: 20px 70px;
+    border-radius: 50px;
+    background-size: 200%;
+    transition: background .5s linear, color .5s linear;
+    margin-left: -100px;
+}
+#create:hover{
+    transition: background .5s linear, color .5s linear;
+    background: #373B44;
+    color: #fff;
+}

@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "name": "Sultan",
+      "age": 16,
+      "id": 2
+    },
+    {
+      "name": "lsg",
+      "age": 234,
+      "id": 3
+    }
+  ],
+  "todos": []
+}

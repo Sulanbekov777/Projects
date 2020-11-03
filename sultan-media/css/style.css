@@ -1,0 +1,160 @@
+body,html{
+    margin: 0;
+    padding: 0;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  .header{
+    display: flex;
+    background: #000;
+    padding: 0 30px;
+    height: 60px;
+    color: #fff;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  .logo{
+    padding: 10px 0;
+    font-size: 30px;
+    flex-basis: 30%;
+  }
+ 
+  
+  .nav {
+    display: flex;
+    height: 100%;
+    flex-basis: 70%;
+  }
+  .nav-item{
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  .nav-item:hover{
+    background-color: #212121;
+  }
+  
+  
+  
+  /* burger menu */
+  
+  .burger-menu{
+    /*    */
+  /*   display: flex; */
+    display: none;
+    /*    */
+    width: 60px;
+    height: 40px;
+    padding: 5px 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .burger-menu .stick{
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  
+  
+  /* Gallery */
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-col{
+    padding: 5px;
+    width: 20%;
+    height: 200px;
+  }
+  .gallery-item{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url('https://png2.cleanpng.com/sh/2655cd2bc01286a89f13b3f9cf5beee1/L0KzQYm3VsExN6p7R91yc4Pzfri0gBF1NaFqjJ98aYT3ebBuTftqfKVqhp9tb3ewRbO4gBRibmMAfqpvMEGxSYKBVMY3O2k2TaQDNkG6R4K7VsU0Pl91htk=/kisspng-cat-pet-sitting-kitten-dog-5b1cdaf29f8f01.9184663815286177146536.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  } 
+
+  @media(max-width: 1024px){
+    .nav{
+        display: none;
+    }
+
+    .burgr-menu{
+        display: block !important;
+    }
+    
+}
+
+/* @media(min-width: 480px){
+  .nav{
+    display: none;
+
+  }
+  .burger-menu{
+    display: block;
+   
+  }
+} */
+
+@media(min-width: 1600px){
+  .nav{
+    display: none;
+  }
+  .burger-menu{
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px){
+  .logo{
+      background-color: rgb(228, 30, 201);
+      display: block;
+  }
+}
+@media screen and (max-width: 700px){
+  .logo{
+    background-color: rgb(42, 7, 243);
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .logo{
+    background-color: rgb(9, 252, 41);
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1000px;){
+  .gallery-col{
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 700px;){
+  .gallery-col{
+    width: 33,33%;
+  }
+}
+
+@media only screen and (min-width: 500px;){
+  .gallery-col{
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 350px;){
+  .gallery-col{
+    width: 100%;
+  }
+}

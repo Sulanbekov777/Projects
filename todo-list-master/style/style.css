@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../img/dejavju1.jpg) no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+header {
+	background: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	margin-top: 30px;
+	/*padding: 20px 0 20px 0;*/
+}
+
+header h1 {
+	text-align: center;
+	color: #e52325;
+	text-shadow: 1px 2px #fff
+}
+
+content {
+    color: #fff;
+}
+
+content .shoes,
+content .clothing,
+content .accessory {
+	display: inline;
+	text-transform: uppercase;
+}
+
+content #list {
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 20px;
+	border: 1px solid #fff;
+}
+
+content #list ol>li {
+	text-transform: capitalize;
+}
+
+footer {
+	color: #fff;
+	text-shadow: 10 10 gray;
+}

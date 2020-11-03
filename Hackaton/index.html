@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>MO shop</title>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="container">
+  <!--=================== HEADER-MENU ======================-->
+      <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              
+                <a class="btn btn-secondary dropdown-toggle list-goods" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Goods
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Samsung Fold-2</a>
+                  <a class="dropdown-item" href="#">Iphone 7-Plus</a>
+                  <a class="dropdown-item" href="#">Huawei Mate-10</a>
+                  <a class="dropdown-item" href="#">Samsung Galaxy S-20</a>
+                  <a class="dropdown-item" href="#">Iphone 11</a>
+                  <a class="dropdown-item" href="#">Huawei P-20</a>
+                  <a class="dropdown-item" href="#">Samsung Galaxy S-10</a>
+                  <a class="dropdown-item" href="#">Iphone X</a>
+                  <a class="dropdown-item" href="#">Huawei P-30 pro</a>
+                </div>
+              
+              <a href="./interactions_with_product/createCard.html" class="nav-link" id="createCard" target="_blank">Create Product</a>
+              <br>
+              <a href="./interactions_with_product/deleteCard.html" class="nav-link" id="deleteCard" target="_blank">Delete Product</a>
+              <br>
+              <a href="./interactions_with_product/editCard.html" class="nav-link" id="editCard" target="_blank">Edit Product</a>
+    
+              <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+              
+            </div>
+          </div>
+        </nav>
+        <div class="header-title">
+          <h1>Welcome</h1><br>
+          <h1>Be smart with our Smart phone</h1>
+        </div>
+      </div>
+
+      <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li> -->
+
+     <!--========================== GOODS-SECTION =========================-->
+
+                             <!-- first-row -->
+
+      <div class="container goods-box">
+        <div class="goods col-sm-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/samsung -fold.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Fold-2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span>Price: 500$</span>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Характеристики
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><span>Тип:  </span>Dynamic AMOLED</a>
+                  <a class="dropdown-item" href="#"><span>Процессор:  </span>2 ядра по 2.7 ГГц (Exynos M5)</a>
+                  <a class="dropdown-item" href="#"><span>Чипсет:  </span>Samsung Exynos 9 Octa 990</a>
+                  <a class="dropdown-item" href="#"><span>Обьем ОЗУ:  </span> 8 ГБ</a>
+                  <a class="dropdown-item" href="#"><span>Зашита:  </span>Corning Gorilla Glass 6</a>
+                  <a class="dropdown-item" href="#"><span>Разрешение:  </span>1440 x 3200 пикселей</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+            <img src="img/iPhone7Plus.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 7-Plus</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span>Price: 500$</span>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Характеристики
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><span>Тип:  </span>Dynamic AMOLED</a>
+                  <a class="dropdown-item" href="#"><span>Процессор:  </span>2 ядра по 2.7 ГГц (Exynos M5)</a>
+                  <a class="dropdown-item" href="#"><span>Чипсет:  </span>Samsung Exynos 9 Octa 990</a>
+                  <a class="dropdown-item" href="#"><span>Обьем ОЗУ:  </span> 8 ГБ</a>
+                  <a class="dropdown-item" href="#"><span>Зашита:  </span>Corning Gorilla Glass 6</a>
+                  <a class="dropdown-item" href="#"><span>Разрешение:  </span>1440 x 3200 пикселей</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+            <img src="img/Huawei-Mate-10-Pro-27.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Huawei Mate-10</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span>Price: 500$</span>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Характеристики
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><span>Тип:  </span>Dynamic AMOLED</a>
+                  <a class="dropdown-item" href="#"><span>Процессор:  </span>2 ядра по 2.7 ГГц (Exynos M5)</a>
+                  <a class="dropdown-item" href="#"><span>Чипсет:  </span>Samsung Exynos 9 Octa 990</a>
+                  <a class="dropdown-item" href="#"><span>Обьем ОЗУ:  </span> 8 ГБ</a>
+                  <a class="dropdown-item" href="#"><span>Зашита:  </span>Corning Gorilla Glass 6</a>
+                  <a class="dropdown-item" href="#"><span>Разрешение:  </span>1440 x 3200 пикселей</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                           <!-- Second-row -->
+
+        <div class="goods col-sm-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/reds20.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy S-20</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span>Price: 500$</span>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Характеристики
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><span>Тип:  </span>Dynamic AMOLED</a>
+                  <a class="dropdown-item" href="#"><span>Процессор:  </span>2 ядра по 2.7 ГГц (Exynos M5)</a>
+                  <a class="dropdown-item" href="#"><span>Чипсет:  </span>Samsung Exynos 9 Octa 990</a>
+                  <a class="dropdown-item" href="#"><span>Обьем ОЗУ:  </span> 8 ГБ</a>
+                  <a class="dropdown-item" href="#"><span>Зашита:  </span>Corning Gorilla Glass 6</a>
+                  <a class="dropdown-item" href="#"><span>Разрешение:  </span>1440 x 3200 пикселей</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+            <img src="img/apple-iphone-11-256gb-purple.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 11</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span>Price: 500$</span>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Характеристики
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><span>Тип:  </span>Dynamic AMOLED</a>
+                  <a class="dropdown-item" href="#"><span>Процессор:  </span>2 ядра по 2.7 ГГц (Exynos M5)</a>
+                  <a class="dropdown-item" href="#"><span>Чипсет:  </span>Samsung Exynos 9 Octa 990</a>
+                  <a class="dropdown-item" href="#"><span>Обьем ОЗУ:  </span> 8 ГБ</a>
+                  <a class="dropdown-item" href="#"><span>Зашита:  </span>Corning Gorilla Glass 6</a>
+                  <a class="dropdown-item" href="#"><span>Разрешение:  </span>1440 x 3200 пикселей</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+            <img src="img/huawei p-20.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Huawei P-20</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span>Price: 500$</span>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Характеристики
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><span>Тип:  </span>Dynamic AMOLED</a>
+                  <a class="dropdown-item" href="#"><span>Процессор:  </span>2 ядра по 2.7 ГГц (Exynos M5)</a>
+                  <a class="dropdown-item" href="#"><span>Чипсет:  </span>Samsung Exynos 9 Octa 990</a>
+                  <a class="dropdown-item" href="#"><span>Обьем ОЗУ:  </span> 8 ГБ</a>
+                  <a class="dropdown-item" href="#"><span>Зашита:  </span>Corning Gorilla Glass 6</a>
+                  <a class="dropdown-item" href="#"><span>Разрешение:  </span>1440 x 3200 пикселей</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                            <!-- Third-row -->
+
+        <div class="goods col-sm-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/samsung-s10.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy S-10</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span>Price: 500$</span>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Характеристики
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><span>Тип:  </span>Dynamic AMOLED</a>
+                  <a class="dropdown-item" href="#"><span>Процессор:  </span>2 ядра по 2.7 ГГц (Exynos M5)</a>
+                  <a class="dropdown-item" href="#"><span>Чипсет:  </span>Samsung Exynos 9 Octa 990</a>
+                  <a class="dropdown-item" href="#"><span>Обьем ОЗУ:  </span> 8 ГБ</a>
+                  <a class="dropdown-item" href="#"><span>Зашита:  </span>Corning Gorilla Glass 6</a>
+                  <a class="dropdown-item" href="#"><span>Разрешение:  </span>1440 x 3200 пикселей</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="img/iphone_x.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Iphone X</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span>Price: 500$</span>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Характеристики
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><span>Тип:  </span>Dynamic AMOLED</a>
+                  <a class="dropdown-item" href="#"><span>Процессор:  </span>2 ядра по 2.7 ГГц (Exynos M5)</a>
+                  <a class="dropdown-item" href="#"><span>Чипсет:  </span>Samsung Exynos 9 Octa 990</a>
+                  <a class="dropdown-item" href="#"><span>Обьем ОЗУ:  </span> 8 ГБ</a>
+                  <a class="dropdown-item" href="#"><span>Зашита:  </span>Corning Gorilla Glass 6</a>
+                  <a class="dropdown-item" href="#"><span>Разрешение:  </span>1440 x 3200 пикселей</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;">
+            <img src="img/huawei p-30.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Huawei P-30 pro</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span>Price: 500$</span>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Характеристики
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><span>Тип:  </span>Dynamic AMOLED</a>
+                  <a class="dropdown-item" href="#"><span>Процессор:  </span>2 ядра по 2.7 ГГц (Exynos M5)</a>
+                  <a class="dropdown-item" href="#"><span>Чипсет:  </span>Samsung Exynos 9 Octa 990</a>
+                  <a class="dropdown-item" href="#"><span>Обьем ОЗУ:  </span> 8 ГБ</a>
+                  <a class="dropdown-item" href="#"><span>Зашита:  </span>Corning Gorilla Glass 6</a>
+                  <a class="dropdown-item" href="#"><span>Разрешение:  </span>1440 x 3200 пикселей</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="wow">
+        <div class="card_holder" style="display: flex; justify-content: space-between; flex-wrap: wrap;"></div>
+    </div>
+      <!--======================== FOOTER-SECTION =====================-->
+
+     <!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+        <p>
+          <a href="#!">Samsung</a>
+        </p>
+        <p>
+          <a href="#!">IPhone</a>
+        </p>
+        <p>
+          <a href="#!">Huawei</a>
+        </p>
+        <p>
+          <a href="#!">One Plus</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Become an Affiliate</a>
+        </p>
+        <p>
+          <a href="#!">Shipping Rates</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <i class="fas fa-home mr-3"></i> Bishkek 312</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">© 2020 Makers:
+          <a href="https://mdbootstrap.com/">
+            <strong>Marat / Oomat</strong>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+      
+      
+    </div> 
+  </div>
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  <script src="./js/index.js"></script>
+</body>
+</html>

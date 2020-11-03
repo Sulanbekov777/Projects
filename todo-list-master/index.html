@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style/material-icons.css">
+    <link rel="stylesheet" href="style/vue-material.min.css">
+    <link rel="stylesheet" href="style/default.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <div id="myApp">
+        <header class="mt-5">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <h1>{{ myTitle }}</h1>
+                </div>
+            </div>
+        </header>
+        <content class="mt-5">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="shoes">
+                        <h2>shoes</h2>
+                    </div>
+                    <div class="clothing">
+                        <h2>clothing</h2>
+                    </div>
+                    <div class="accessory">
+                        <h2>accessory</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div id="list" class="col-7 offset-1 m-5 p-5">
+                    <form
+                        v-on:submit.prevent="addNewTodo">
+                        <label
+                            for="new-todo">Добавить товар</label>
+                        <input
+                            v-model="newTodoText"
+                            id="new-todo"
+                            placeholder="Please add"
+                        >
+                        <button>Добавить</button>
+                    </form>
+                    <ol>
+                        <li
+                            is="todo-item"
+                            v-for="(todo, index) in todos"
+                            v-bind:key="todo.id"
+                            v-bind:title="todo.title"
+                            v-on:remove="todos.splice(index, 1)"
+                        ></li>
+                    </ol>
+                </div>
+            </div>
+        </content>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    @ Roman Matviy 2018
+                </div>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+          </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+        </script>
+
+        <!-- <script src="js/axios.js"></script> -->
+        <script src="js/vue.js"></script>
+        <!-- <script src="js/vue-material.min.js"></script> -->
+
+        <!-- Main JavaScript -->
+        <script src="js/main.js"></script>
+    </div>
+</body>
+</html>
